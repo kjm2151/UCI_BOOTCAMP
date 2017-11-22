@@ -57,7 +57,7 @@ plt.show()
 type_group = ride_city_data.groupby("type")
 
 fare_by_type = type_group["fare"].sum()
-fare_by_type_chart = fare_by_type.plot(kind='pie', figsize=(5,5))
+fare_by_type_chart = fare_by_type.plot(kind='pie', autopct='%1.1f%%', figsize=(5,5))
 plt.title("% of Total Fares by City Type")
 plt.xlabel("")
 plt.ylabel("")
@@ -66,7 +66,8 @@ plt.show()
 ######### Total Rides by City Type
 
 ride_by_type = type_group["ride_id"].count()
-ride_by_type_chart = ride_by_type.plot(kind='pie', figsize=(5,5))
+ride_by_type_chart = ride_by_type.plot(kind='pie', autopct='%1.1f%%', figsize=(5,5))
 plt.title("% of Total Rides by City Type")
-
+plt.xlabel("")
+plt.ylabel("")
 plt.show()
