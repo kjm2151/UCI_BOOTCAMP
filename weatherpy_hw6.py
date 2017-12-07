@@ -66,7 +66,7 @@ city_list = rmdup_city_df["Nearest City"].tolist()
 
 
 # Save config information.
-api_key = "6e4ec6141e342d84f803e57a1dbd40b4"
+api_key = "<API_KEY>"
 url = "http://api.openweathermap.org/data/2.5/weather?"
 units = "metric"
 
