@@ -11,10 +11,10 @@ from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 analyzer = SentimentIntensityAnalyzer()
 
 # Twitter API Keys
-consumer_key = "B9zDsZD17rrpcsoUboPTO9MqM"
-consumer_secret = "hpBYuMPoGBoMuSDmpMsnQEE4jC1jhUX1fYu327FC6hLILMWsDx"
-access_token = "178789284-w1288VTQODRMmUc2IjKGY0095iq5PoKsSnwECR0c"
-access_token_secret = "w5lr8Vtr9ssiLKfHnLYmjgcMhvKiYOhkVjNu4ERkUX6Tt"
+consumer_key = <>
+consumer_secret = <>
+access_token = <>
+access_token_secret = <>
 
 # Setup Tweepy API Authentication
 auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
