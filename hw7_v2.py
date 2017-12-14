@@ -59,6 +59,16 @@ plt.ylabel('Tweet Polarity')
 plt.show()
 print("Most of tweets from all 5 media stayed around compound score 0.")
 
+media_df = df.set_index('source')
+
+for i in range(0,len(news_org)):
+    fg = sns.FacetGrid(data=media_df.loc[news_org[i]], aspect=2, size=5)
+    fg.map(plt.scatter, 'tweets ago', 'compound')
+    plt.title("Sentiment Analysis of Tweets (%s) for %s" % (time.strftime("%x"), news_org[i]))
+    plt.xlabel('Tweets Ago')
+    plt.ylabel('Tweet Polarity')
+    plt.show()
+
 df_groupby = df.groupby('source').mean()
 df_groupby.reset_index(inplace=True)
 print(df_groupby)
