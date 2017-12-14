@@ -42,7 +42,7 @@ for news in news_org:
                 'compound': compound,
                 'positive': pos,
                 'negative': neg,
-                'tweets ago': counter
+                'tweets ago': counter*-1
                 }
         post_sentiment.append(news_dict)
         counter += 1
